@@ -6290,6 +6290,16 @@ a.close.disabled {
   border-top-right-radius: calc(0.3rem - 1px);
 }
 
+.modal-header-2 { /* for adding things in the header*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: start; /*This makes it so the divs don't align in opposite corners*/
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
 .modal-header .close {
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;

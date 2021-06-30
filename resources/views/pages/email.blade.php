@@ -40,11 +40,35 @@
                     <br>
                     <label for="email_signature" class="col-md-3 col-form-label text-md-right">Email Signature <br>(with comma)</label>
                     <textarea id="email_signature" name="email_signature" type="text" cols="60" rows="1" style="vertical-align: middle;" spellcheck="true"></textarea>
-                    <br>
-                    <button id="submit" type="submit" class="btn btn-primary col-2 btn-sm">Send</button>
+                    <br><br>
+                    <button id="submit" data-toggle="modal" data-target="#loadingModal" type="submit" class="btn btn-primary col-2 btn-sm">Send</button>
                 </div>
                 
             </form>
+            <div class="col-md-8">
+                
+            </div>
+            <!-- Loading Modal -->
+            <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header-2">
+                            <div style="display:inline-block; padding-top:10px; padding-right: 10px;">
+                            <h5 id="exampleModalLabel">Sending...</h5>
+                            </div>
+                            <div style="display:inline-block;">
+                                <div class="spinner-border" role="status">
+                                    <!--<span class="visually-hidden">Loading...</span>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p>Your emails are being sent, please wait...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Loading Modal -->
         </div>
     </div>
 @endsection
